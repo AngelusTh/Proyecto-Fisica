@@ -1,25 +1,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 body{
-    background-color: beige;
-    margin: 0;
-    box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
 }
 
 .menu{
-	background-color: white;
-	color: black;
-	height: 70px;
-    border-bottom: 5px solid rgb(72, 190, 72);
+	background-color: black;
+	color: #fff;
+	height: 50px;
 }
 
 .menu__container{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 90%;
+	width: 100%;
 	max-width: 1200px;
 	height: 100%;
 	margin: 0 auto;/*centro*/
@@ -30,96 +35,136 @@ body{
 	transition: transfor .5s;
 	display: flex;
 }
-.menu__link:hover{
-    background-color: orange;
-}
 
 .menu__item{
 	list-style: none;
 	position: relative;
-	height: 100%;
 }
 
 
 .menu__link{
-	color: black;
+	color: #fff;
 	text-decoration: none;
 	padding: 0 30px;
 	display: flex;
 	height: 100%;
 	align-items: center;
+	background-color: black;
+    font-size: 15px;
 }
-
-.logo{
-    width: 70px;
-    height: 65px;
-    margin-left:8px;
+.menu__link:hover{
+	background-color: white;
+    color: black;
 }
 
 .header{
-	justify-content: center;
-	align-items: center;
-	height: 50vh;
-    background: white;
-	background-size: cover;
-    border: solid;
-    padding: 0;
-    margin: 0;
-}
-.contenido{
-    box-sizing: border-box;
-    width: 90%;
-    height: 90%;
-    border: solid;
-    padding: 10px;
-    margin: auto;
-    margin-top: 50px;
-    background-color: white;
-    align-items: center;
-    padding-bottom: 40px;
+	height: 75vh;
+    background: linear-gradient(130deg,black,black,gray);
+    padding: 20px;
 }
 
 .title1{
+    margin-top: 100px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    text-align: center;
+    font-size: 80px;
+    text-align: left;
     text-transform: uppercase;
-    color: #000;
-    font-style: italic;
+    color: white;
+    
+}
+
+.parrafo1{
+    color: #fff;
+    font-size: 13px;
 }
 
 .title2{
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     
-}
-
-.parrafo, li{
-    font-size: 18px;
-    text-shadow: 10px;
-}
-
-.btnResolver{
-    background-color: blue;
-    padding: 10px;
-    margin: 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
     
 }
-
-.btnResolver:hover{
-    background-color: red;
+.contenido{
+    box-sizing: border-box;
+    width: 95%;
+    height: 300px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+   
 }
+.contenido img{
+    width: 300px;
+    height: 300px;
+
+}
+
+.title3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.contenido2{
+    box-sizing: border-box;
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    margin-top: 40px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.Contenedor_cajitas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    padding: 15px;
+
+}
+.cajita{
+    padding: 25px 10px;
+    width: 300px;
+    text-align: left;
+    transition: 1s;
+    box-shadow: 0 0 15px gray;
+    margin-left: 25px;
+}
+
+
+.contenido3{
+    box-sizing: border-box;
+    width: 95%;
+    height: 250px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+
+   
+}
+.contenido3 img{
+    width: 200px;
+    height: 200px;
+
+}
+
+
+
 
 .pie{
     display: flex;
     width: 100%;
-    height: 200px;
-    background-color: white;
+    height: 300px;
+    background: linear-gradient(130deg,gray,black,black);
     border: solid;
     margin-top: 40px;
     left: 0;
