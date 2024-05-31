@@ -19,6 +19,11 @@ body{
 	color: #fff;
 	height: 50px;
 }
+.menu img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
 
 .menu__container{
 	display: flex;
