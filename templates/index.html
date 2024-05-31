@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Tiro Parabólico</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Calculadora de Tiro Parabólico</h1>
+        <textarea id="query" placeholder="Ingresa tu pregunta aquí"></textarea>
+        <button id="calculate">Calcular</button>
+        <div id="result"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script>
+        var socket = io();
+
+        document.getElementById('calculate').addEventListener('click', function() {
+            var query = document.getElementById('query').value;
+            socket.emit('calculate', { query: query });
+        });
+
+        socket.on('result', function(data) {
+            var resultDiv = document.getElementById('result');
+            if (data.error) {
+                resultDiv.textContent = data.error;
+            } else {
+                resultDiv.textContent = 'Resultado: ' + JSON.stringify(data.resultado);
+            }
+            resultDiv.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

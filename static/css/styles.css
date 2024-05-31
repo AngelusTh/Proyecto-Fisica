@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1e2a38; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #d6d6d6;
+}
+
+#container {
+    background-color: #2c3e50; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 600px; /* Hacemos el contenedor más grande */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #00aaff; 
+}
+
+textarea {
+    width: calc(100% - 20px);
+    height: 150px; /* Aumentamos la altura del textarea */
+    padding: 15px; /* Aumentar el padding para mayor altura */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    box-sizing: border-box;
+    resize: none; /* Evitar que el usuario cambie el tamaño del textarea */
+    white-space: pre-wrap; /* Para que el texto se ajuste dentro del área */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e74c3c; 
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0392b; /* Color del botón al pasar el cursor */
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #27ae60; 
+    color: #fff;
+    display: none;
+    font-size: 22px;
+}
+
+textarea:focus, button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
